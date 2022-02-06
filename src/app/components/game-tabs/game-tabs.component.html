@@ -1,14 +1,9 @@
 <div class="game-tabs">
   <mat-tab-group mat-align-tabs="start" backgroundColor="primary">
     <mat-tab label="A propos">
-      <p *ngIf="game.parent_platforms?.length" class="game-tabs-par">
-        Platformes:
-        <span *ngFor="let game of game.parent_platforms; let last = last"
-          >{{ game.platform.name }}<span *ngIf="!last">, </span></span
-        >
-      </p>
+
       <p *ngIf="game.publishers?.length" class="game-tabs-par">
-        Sortie:
+        Producteur:
         <span *ngFor="let publisher of game.publishers; let last = last"
           >{{ publisher.name }}<span *ngIf="!last">, </span></span
         >

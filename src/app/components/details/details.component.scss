@@ -1,81 +1,187 @@
-.details-wrapper {
-    max-width: 900px;
-    margin: 20px auto;
-    position: relative;
+// .details-wrapper {
+//     // max-width: 900px;
+//     margin-top: 200px;
+//     position: relative;
+//     z-index: 5;
+//   }
+
+//   .details {
+//     ::ng-deep mwl-gauge {
+//       width:300px;
+//       height: 300px;
+//       display: block;
+//       padding: 10px;
+
+//       .dial {
+//         stroke-width: 10;
+//       }
+
+//       .value {
+//         stroke-dasharray: none;
+//         stroke-width: 13;
+//       }
+
+//       .value-text {
+//         fill: #fff;
+//         font-weight: 700;
+//         font-size: 30px;
+//       }
+//     }
+
+//     .game-gauge {
+//       position: absolute;
+//       top: 10px;
+//       right: 300px;
+
+//       &-label {
+//         font-size: 20px;
+//         color: #fff;
+//         position: relative;
+//         bottom: 60px;
+//       }
+//     }
+//   }
+
+//   .game {
+//     &-banner {
+//       height: 442px;
+//       overflow: hidden;
+
+//       &-img {
+//         width: 100%;
+//         height: 100%;
+//         background: linear-gradient(180deg,
+//          rgba(0,0,0,0.7) 0%,
+//           rgba(0,0,0,0.7) 100%);
+
+
+//       }
+//     }
+
+//     &-content {
+//       text-align: center;
+//       position: relative;
+//       // top: -200px;
+//     }
+
+//     &-header {
+//       &-title {
+//         font-size: 70px;
+//         color: #fff;
+//         font-weight: 700;
+//         line-height: 70px;
+//         white-space: nowrap;
+//       }
+
+//       &-release-date {
+//         color: #fff;
+//         font-weight: 700;
+//       }
+
+//       &-genres {
+//         color: #fff;
+//         font-weight: 700;
+//       }
+//     }
+//   }
+
+
+// .game-banner-img{
+//   position: fixed;
+//   height: 100%;
+// }
+// .game-content{
+//   height: 100%;
+//   width: 100%;
+//   position: absolute;
+//   top: 0;
+//   background: linear-gradient(180deg,
+//   rgba(0,0,0,0.60) 0%,
+//    rgba(0,0,0,0.65) 100%);
+// }
+
+.details{
+  position: relative;
+}
+.game-banner-img{
+  position: fixed;
+  top: -100px;
+  height: 120%;
+  width: 100%;
+  z-index: -3;
+}
+.game-header{
+  height: 500px;;
+}
+.fond{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,0.57) 0%, rgba(0,0,0,0.9) 100%);
+  z-index: -2;
+}
+
+.details {
+  ::ng-deep mwl-gauge {
+    width:300px;
+    height: 300px;
+    display: block;
+    padding: 10px;
+
+    .dial {
+      stroke-width: 10;
+    }
+
+    .value {
+      stroke-dasharray: none;
+      stroke-width: 13;
+    }
+
+    .value-text {
+      fill: #fff;
+      font-weight: 700;
+      font-size: 30px;
+    }
   }
-  
-  .details {
-    ::ng-deep mwl-gauge {
-      width: 150px;
-      height: 150px;
-      display: block;
-      padding: 10px;
-  
-      .dial {
-        stroke-width: 10;
-      }
-  
-      .value {
-        stroke-dasharray: none;
-        stroke-width: 13;
-      }
-  
-      .value-text {
-        fill: #fff;
-        font-weight: 700;
-        font-size: 24px;
-      }
-    }
-  
-    .game-gauge {
-      position: absolute;
-      top: 50px;
-      right: 0;
-  
-      &-label {
-        font-size: 20px;
-        color: #fff;
-        position: relative;
-        bottom: 60px;
-      }
-    }
-  }
-  
-  .game {
-    &-banner {
-      height: 442px;
-      overflow: hidden;
-  
-      &-img {
-        width: 100%;
-        filter: blur(5px);
-      }
-    }
-  
-    &-content {
-      text-align: center;
+
+  .game-gauge {
+    // position: absolute;
+    // top: 100px;
+    // right: 300px;
+
+    &-label {
+      font-size: 20px;
+      color: #fff;
       position: relative;
-      top: -200px;
-    }
-  
-    &-header {
-      &-title {
-        font-size: 70px;
-        color: #fff;
-        font-weight: 700;
-        line-height: 70px;
-        white-space: nowrap;
-      }
-  
-      &-release-date {
-        color: #fff;
-        font-weight: 700;
-      }
-  
-      &-genres {
-        color: #fff;
-        font-weight: 700;
-      }
+      bottom: 60px;
     }
   }
-  
+}
+
+.details-wrapper{
+  width: 1300px;
+  margin: auto;
+}
+.game-header{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 180px;
+  color: #fff;
+
+    h1{
+      font-size: 50px;
+      font-weight: 700;
+      margin-bottom: 50px;
+    }
+    h2{
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    p{
+      font-size: 20px;
+      margin-bottom: 20px;
+
+    }
+}
